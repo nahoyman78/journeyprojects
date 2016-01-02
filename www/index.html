@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+$.ajax({
+    url:'https://crossorigin.me/' +
+        'http://ubf.org/daily-bread',
+        type:'GET',
+        success: function(data){
+			$("#bodytext").show();
+			$("#versestext").show();
+			$("#titletext").show();
+           	$('#bodytext').html($(data).find('.field-name-body').html());
+		   	$('#versestext').html($(data).find('.field-name-field-daily-bread-verses-long').html());
+		   	$('#titletext').html($(data).find('.field-name-title').html());
+			$('#loading-text').hide();
+        }
+});
+</script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<style>
+body, html {
+	padding: 5px;
+	margin: 5px;	
+}
+#titletext {
+	font-family: 'Open Sans', serif;
+	background-color: #1A40D3;
+	padding: 5px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+#versestext {
+	font-family: 'Open Sans', serif;
+	background-color: #0041C5;
+	padding: 5px;
+	color: white;
+	font-size: 20px;
+}
+#versestext a:link {
+	color: white;
+	text-decoration: none;
+}
+#versestext a:visited {
+	color: white;
+	text-decoration: none;
+}
+#versestext a:hover {
+	color: white;
+	text-decoration: none;
+}
+#versestext a:active {
+	color: white;
+	text-decoration: none;
+}
+#bodytext {
+	font-family: 'Open Sans', serif;
+	background-color: #E5E5E5;
+	padding: 5px;	
+	font-size: 20px;
+}
+</style>
+<body>
+<div id="loading-text">Getting Data from Server</div>
+<div id="titletext" style="display: none;"></div>
+<div id="versestext" style="display: none;"></div>
+<div id="bodytext" style="display: none;"></div>
+</body>
+</html>
