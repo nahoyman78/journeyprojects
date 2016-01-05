@@ -28,13 +28,23 @@ $.ajax({
 <script type="text/javascript" src="js/index.js"></script>
 </head>
 <style>
+@font-face {
+    font-family: RegularFont;
+    src: url(fonts/Arvo-Regular.ttf);
+}
+
+@font-face {
+    font-family: HeavyFont;
+    src: url(fonts/Arvo-Bold.ttf);
+}
+
 body, html {
 	padding: 0;
 	margin: 0;
 	background-color: #EDEDED;
 }
 #loadingtext {
-	font-family: 'Josefin Slab', serif;
+	font-family: HeavyFont;
 	background-color: white;
 	padding: 10px;
 	margin: 5px;
@@ -44,7 +54,7 @@ body, html {
 	border-bottom: 1px solid #3C9AE7;
 }
 #titletext {
-	font-family: 'Josefin Slab', serif;
+	font-family: HeavyFont;
 	background-color: #3C9AE7;
 	padding: 10px;
 	margin: 5px;
@@ -54,7 +64,7 @@ body, html {
 	border-bottom: 1px solid #3C9AE7;
 }
 #versestext {
-	font-family: 'Josefin Slab', serif;
+	font-family: RegularFont;
 	background-color: white;
 	padding: 10px;
 	color: #3C9AE7;
@@ -63,7 +73,7 @@ body, html {
 	border-bottom: 1px solid #3C9AE7;
 }
 #onewordtext {
-	font-family: 'Josefin Slab', serif;
+	font-family: RegularFont;
 	background-color: white;
 	padding: 10px;
 	color: #6F6F6F;
@@ -89,10 +99,10 @@ body, html {
 }
 #bodytext {
 	margin: 5px;
-	font-family: 'Josefin Slab', serif;
+	font-family: RegularFont;
 	background-color: white;
 	padding: 10px;	
-	font-size: 20px;
+	font-size: 22px;
 	border-bottom: 1px solid #3C9AE7;
 }
 </style>
