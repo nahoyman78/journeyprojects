@@ -14,7 +14,9 @@ $.ajax({
 			$("#versestext").show();
 			$("#titletext").show();
 			$("#onewordtext").show();
+			$("#datestext").show();
            	$('#bodytext').html($(data).find('.field-name-body').html());
+			$('#datestext').html($(data).find('.field-name-field-daily-bread-date').html());
 		   	$('#1versestext').html($(data).find('.field-name-field-daily-bread-verses-long').html());
 			$('#keyversetext').html($(data).find('.field-name-field-daily-bread-key-verse-long .field-items').html());
 			$('#onewordtext').html($(data).find('.field-name-field-daily-bread-one-word').html());
@@ -30,6 +32,7 @@ $(document).ready(function() {
 		$("#versestext").hide();
 		$("#titletext").hide();
 		$("#onewordtext").hide();
+		$("#datestext").hide();
       reloadfunction();
     });
 	
@@ -43,8 +46,10 @@ $(document).ready(function() {
 				$("#versestext").show();
 				$("#titletext").show();
 				$("#onewordtext").show();
+				$("#datestext").show();
 				$('#bodytext').html($(data).find('.field-name-body').html());
 				$('#1versestext').html($(data).find('.field-name-field-daily-bread-verses-long').html());
+				$('#datestext').html($(data).find('.field-name-field-daily-bread-date').html());
 				$('#keyversetext').html($(data).find('.field-name-field-daily-bread-key-verse-long .field-items').html());
 				$('#onewordtext').html($(data).find('.field-name-field-daily-bread-one-word').html());
 				$('#titletext').html($(data).find('.field-name-title').html());
@@ -103,6 +108,15 @@ body, html {
 	font-size: 20px;
 	border-bottom: 1px solid #3C9AE7;
 }
+#datestext {
+	font-family: RegularFont;
+	background-color: white;
+	padding: 10px;
+	color: #3C9AE7;
+	margin: 5px;
+	font-size: 20px;
+	border-bottom: 1px solid #3C9AE7;
+}
 #onewordtext {
 	font-family: RegularFont;
 	background-color: white;
@@ -149,6 +163,7 @@ body, html {
 <body>
 <div id="loadingtext">Getting Data from Server...</div>
 <div id="titletext" style="display: none;">Title Placeholder</div>
+<div id="datestext" style="display: none;">Title Placeholder</div>
 <div id="versestext" style="height: 40px; display: none;">
 <div id="1versestext" style="float: left;">
 Genesis 1:1-4
