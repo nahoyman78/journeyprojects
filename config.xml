@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.yohan.dailybreadubf" version="1.0.1">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.yohan.dailybreadubf" version="1.0.2">
   <name>Daily Bread Mobile</name>
   <description>UBFs daily bread for mobile!</description>
   <author href="http://ubf.org" email="nahoyman78@gmail.com">Yohan Joo</author>
